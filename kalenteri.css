@@ -1,0 +1,58 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f0372a;
+}
+.container {
+  width: 520px;
+  max-width: 95%;
+}
+
+#playMusic { position:fixed; top:10px; left:10px; padding:15px 20px; border-radius:6px; border:1px solid #bbb; background:#fff; cursor:pointer; }
+
+.tausta {
+    background-image: url(taustakuva.jpg);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 2.25rem;
+
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.door {
+  background: linear-gradient(#fff, #f0f6ff);
+  border: 1px solid #39680cb2;
+  border-width: 8px;
+  border-radius: 8px;
+  padding: 18px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+}
+.door:active {
+  transform: translateY(1px);
+}
+.small {
+  font-size: 0.85rem;
+}
+.note {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+}

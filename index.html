@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joulukalenteri</title>
+
+  <!-- CSS omassa tiedostossaan -->
+  <link rel="stylesheet" href="kalenteri.css">
+
+  <!-- Otsikon fontti -->
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Tausta-animaatio -->
+  <video autoplay muted loop id="lumisade">
+    <source src="lumisade.mp4" type="video/mp4">
+  </video>
+
+  <!-- Taustamusiikkipainike -->
+  <button id="playMusic">Soita taustamusiikkia! <br> ♫
+  </button>
+
+  <div class="container">
+      <h1>Joulukalenteri</h1>
+      <div class="calendar" id="calendar"></div>
+  </div>
+
+<!-- joulumaisema gif kalenterin alle-->
+<div class="joulumaisema">
+  <img src="xmas.gif" alt="jouluinen tunnelma" />
+  </div>
+
+  <!-- Javascript -->
+  <script src="javascript.js"></script>
+</body>
+</html>

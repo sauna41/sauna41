@@ -1,0 +1,113 @@
+/* Yleiset asetukset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mountains of Christmas', cursive;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Taustavideo */
+#lumisade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Ihan perälle */
+  object-fit: cover;
+}
+
+.joulumaisema {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Taustalle */
+  overflow: hidden;
+}
+
+.joulumaisema img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Musiikki-painike */
+#playMusic {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 57, 2);
+  font-style: italic;
+  font-size: clamp(20px, 1vh, 60px);
+
+}
+
+.container {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* h1 keskitetty ja responsiivinen fontti */
+h1 {
+  font-size: clamp(40px, 6vw, 80px);
+  margin-bottom: 40px;
+  text-align: center;
+  color: red
+}
+
+
+/* Kalenterin alue keskitettynä */
+/* Kalenterin alue keskitettynä ja responsiivinen */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Automaattinen määrä sarakkeita */
+  gap: 15px;
+  width: 90%;        /* Käyttää 90% leveydestä */
+  max-width: 800px;  /* Maksimileveys */
+  margin: 0 auto;    
+  margin-top: 40px;
+}
+
+/* Luukut responsiivisesti */
+.door {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Pitää luukun neliönä */
+  background: rgba(23, 116, 0, 0.9);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(40px, 2vw, 28px); /* Skaalautuva fontti */
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.door:hover {
+  transform: scale(1.2);
+}
+
+
+.open {
+  background: rgb(66, 142, 0);
+  color: rgb(255, 255, 255);
+}
+
+.door.open {
+  font-size: clamp(16px, 2vw, 28px); /* Pienempi fontti avattuna */
+  background: rgb(242, 122, 17);
+  color: rgb(255, 255, 255);
+}
+
+.door.locked {
+  background: rgb(255, 85, 0);
+  cursor: not-allowed;
+}
